@@ -1,19 +1,20 @@
 # Angular Testing Helpers & Best Practices
 
-## Component Tests
+## Test Best Practices
 
 ### TL;DR
-- Declare Component, don't import from module
-- NO_ERRORS_SCHEMA
+- Declare Components in the testing module
+- Use the NO_ERRORS_SCHEMA
 - Import only what is necessary!
-- Module imports should be avoided
+- Module imports should generally be avoided
 - Provide Mock Services 
 - Declare Mock Pipes
 - Declare Mock Directives
 
 
-
-### Declare Component, don't import from module
+### Declare Components in the testing module
+Don't import the whole module a component is declared in.
+> Test
 ```ts
 import { AppComponent } from 'app/app.component';
     ...
@@ -27,7 +28,8 @@ TestBed.configureTestingModule({
 ```
 
 
-### NO_ERRORS_SCHEMA
+### Use the NO_ERRORS_SCHEMA
+> Test
 ```ts
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 ...
@@ -71,7 +73,7 @@ TestBed.configureTestingModule({
 ```
 
 
-### Module imports should be avoided 
+### Module imports should generally be avoided 
 > Component
 ```ts
 @Component({
@@ -112,7 +114,8 @@ TestBed.configureTestingModule({
 })
 ```
 
-### Provide Mock Services 
+### Provide Mock Service
+> Component
 ```ts
 @Component({
     selector: 'app-root',
@@ -210,7 +213,7 @@ export class UserPopoverComponent implements OnDestroy {
 
 > Test
 
-Declare a directive inside the test that has the same `selector` and `exportAs` as the directive used in the temaplte and and add it to the `declarations` in the testing module.
+Declare a directive inside the test that has the same `selector` and `exportAs` as the directive used in the template and add it to the `declarations` in the testing module.
 
 Replace all functions from the directive that are called inside your component with empty functions.
 
