@@ -1,65 +1,93 @@
 {
-  "name": "testing-example",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build testing-example",
-    "build:libs": "run-s build:lib build:lib-jasmine build:lib-jest",
-    "build:lib": "ng build @ngx-patterns/testing",
-    "build:lib-jasmine": "ng build @ngx-patterns/testing-jasmine",
-    "build:lib-jest": "ng build @ngx-patterns/testing-jest",
-    "test": "ng test testing-example",
-    "test:lib": "ng test @ngx-patterns/testing",
-    "test:lib-jasmine": "ng test @ngx-patterns/testing-jasmine",
-    "test:lib-jest": "ng test @ngx-patterns/testing-jest",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^6.0.3",
-    "@angular/common": "^6.0.3",
-    "@angular/compiler": "^6.0.3",
-    "@angular/core": "^6.0.3",
-    "@angular/forms": "^6.0.3",
-    "@angular/http": "^6.0.3",
-    "@angular/platform-browser": "^6.0.3",
-    "@angular/platform-browser-dynamic": "^6.0.3",
-    "@angular/router": "^6.0.3",
-    "core-js": "^2.5.4",
-    "lodash-es": "^4.17.10",
-    "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.6.8",
-    "@angular-devkit/build-ng-packagr": "~0.6.8",
-    "@angular/cli": "~6.0.8",
-    "@angular/compiler-cli": "^6.0.3",
-    "@angular/language-service": "^6.0.3",
-    "@types/jasmine": "~2.8.6",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/jest": "^23.1.4",
-    "@types/lodash-es": "^4.17.0",
-    "@types/node": "~8.9.4",
-    "codelyzer": "~4.2.1",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "jest": "^23.3.0",
-    "jest-preset-angular": "^5.2.3",
-    "karma": "~1.7.1",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.0",
-    "karma-jasmine": "~1.1.1",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "ng-packagr": "^3.0.0-rc.2",
-    "npm-run-all": "^4.1.3",
-    "protractor": "~5.3.0",
-    "ts-node": "~5.0.1",
-    "tsickle": ">=0.25.5",
-    "tslib": "^1.7.1",
-    "tslint": "~5.9.1",
-    "typescript": "~2.7.2"
-  }
+    "name": "testing-example",
+    "version": "0.0.0",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build testing-example",
+        "build:libs": "run-s build:lib build:lib-jasmine build:lib-jest",
+        "build:lib": "ng build @ngx-patterns/testing",
+        "build:lib-jasmine": "ng build @ngx-patterns/testing-jasmine",
+        "build:lib-jest": "ng build @ngx-patterns/testing-jest",
+        "test:jasmine": "ng test testing-example",
+        "test:jest": "jest",
+        "test:lib": "ng test @ngx-patterns/testing",
+        "test:lib-jasmine": "ng test @ngx-patterns/testing-jasmine",
+        "test:lib-jest": "ng test @ngx-patterns/testing-jest",
+        "lint": "ng lint",
+        "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^6.0.3",
+        "@angular/common": "^6.0.3",
+        "@angular/compiler": "^6.0.3",
+        "@angular/core": "^6.0.3",
+        "@angular/forms": "^6.0.3",
+        "@angular/http": "^6.0.3",
+        "@angular/platform-browser": "^6.0.3",
+        "@angular/platform-browser-dynamic": "^6.0.3",
+        "@angular/router": "^6.0.3",
+        "core-js": "^2.5.4",
+        "lodash-es": "^4.17.10",
+        "rxjs": "^6.0.0",
+        "zone.js": "^0.8.26"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "~0.6.8",
+        "@angular-devkit/build-ng-packagr": "~0.6.8",
+        "@angular/cli": "~6.0.8",
+        "@angular/compiler-cli": "^6.0.3",
+        "@angular/language-service": "^6.0.3",
+        "@types/jasmine": "~2.8.6",
+        "@types/jasminewd2": "~2.0.3",
+        "@types/jest": "^23.1.4",
+        "@types/lodash-es": "^4.17.0",
+        "@types/node": "~8.9.4",
+        "codelyzer": "~4.2.1",
+        "jasmine-core": "~2.99.1",
+        "jasmine-spec-reporter": "~4.2.1",
+        "jest": "^23.3.0",
+        "jest-preset-angular": "^5.2.3",
+        "karma": "~1.7.1",
+        "karma-chrome-launcher": "~2.2.0",
+        "karma-coverage-istanbul-reporter": "~2.0.0",
+        "karma-jasmine": "~1.1.1",
+        "karma-jasmine-html-reporter": "^0.2.2",
+        "ng-packagr": "^3.0.0-rc.2",
+        "npm-run-all": "^4.1.3",
+        "protractor": "~5.3.0",
+        "ts-node": "~5.0.1",
+        "tsickle": ">=0.25.5",
+        "tslib": "^1.7.1",
+        "tslint": "~5.9.1",
+        "typescript": "~2.7.2"
+    },
+    "jest": {
+        "preset": "jest-preset-angular",
+        "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
+        "globals": {
+            "ts-jest": {
+                "tsConfigFile": "./src/tsconfig.spec.jest.json"
+            },
+            "__TRANSFORM_HTML__": true
+        },
+        "testMatch": [
+            "**/+(*.)+(spec|test|spec.jest).+(ts|js)?(x)"
+        ],
+        "moduleNameMapper": {
+            "app/(.*)": "<rootDir>/src/app/$1",
+            "assets/(.*)": "<rootDir>/src/assets/$1",
+            "environments/(.*)": "<rootDir>/src/environments/$1",
+            "^@ngx-patterns/testing$": "<rootDir>/dist/ngx-patterns/testing",
+            "^@ngx-patterns/testing-jasmine$": "<rootDir>/dist/ngx-patterns/testing-jasmine",
+            "^@ngx-patterns/testing-jest$": "<rootDir>/dist/ngx-patterns/testing-jest"
+        },
+        "modulePathIgnorePatterns": [
+            "<rootDir>/projects/"
+        ],
+        "transformIgnorePatterns": [
+            "<rootDir>/node_modules/(?!lodash-es)"
+        ]
+    }
 }

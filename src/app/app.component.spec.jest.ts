@@ -1,5 +1,6 @@
 import { async, ComponentFixture } from '@angular/core/testing';
 import { createComponent, setupComponentTest } from '@ngx-patterns/testing';
+import { expectElementFromFixture } from '@ngx-patterns/testing-jasmine';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
     let fixture: ComponentFixture<AppComponent>;
@@ -15,10 +16,7 @@ describe('AppComponent', () => {
         fixture.detectChanges();
     });
 
-    it('should create the app', async(() => {
-        expect(fixture).toBeTruthy();
-    }));
-    it(`should have as title 'tst'`, async(() => {
-        expect(fixture.componentInstance.title).toEqual('tst');
+    it(`should have a h1`, async(() => {
+        expectElementFromFixture(fixture, 'h1').toBeTruthy();
     }));
 });

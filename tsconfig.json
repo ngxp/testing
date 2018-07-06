@@ -1,40 +1,40 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
-    "paths": {
-      "@ngx-patterns/testing": [
-        "dist/ngx-patterns/testing"
-      ],
-      "@ngx-patterns/testing/*": [
-        "dist/ngx-patterns/testing/*"
-      ],
-      "@ngx-patterns/testing-jasmine": [
-        "dist/ngx-patterns/testing-jasmine"
-      ],
-      "@ngx-patterns/testing-jasmine/*": [
-        "dist/ngx-patterns/testing-jasmine/*"
-      ],
-      "@ngx-patterns/testing-jest": [
-        "dist/ngx-patterns/testing-jest"
-      ],
-      "@ngx-patterns/testing-jest/*": [
-        "dist/ngx-patterns/testing-jest/*"
-      ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "paths": {
+            "@ngx-patterns/testing": [
+                "dist/ngx-patterns/testing"
+            ],
+            "@ngx-patterns/testing/*": [
+                "dist/ngx-patterns/testing/*"
+            ],
+            "@ngx-patterns/testing-jasmine": [
+                "dist/ngx-patterns/testing-jasmine"
+            ],
+            "@ngx-patterns/testing-jasmine/*": [
+                "dist/ngx-patterns/testing-jasmine/*"
+            ],
+            "@ngx-patterns/testing-jest": [
+                "dist/ngx-patterns/testing-jest"
+            ],
+            "@ngx-patterns/testing-jest/*": [
+                "dist/ngx-patterns/testing-jest/*"
+            ]
+        }
     }
-  }
 }
