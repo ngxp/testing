@@ -1,5 +1,2 @@
-/*
- * Public API Surface of testing-jasmine
- */
-
-export * from './lib/test-helpers';
+export * from './lib/component-helpers';
+export * from './lib/dom-helpers';
