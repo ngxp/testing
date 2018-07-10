@@ -2,8 +2,9 @@ import { InjectionToken } from '@angular/core';
 import { TestBed, TestModuleMetadata } from '@angular/core/testing';
 import { provideMockActions } from '@ngrx/effects/testing';
 import { Action, ActionReducerMap, Store, StoreModule } from '@ngrx/store';
-import { isUndefined, take } from 'lodash-es';
+import { isUndefined } from 'lodash-es';
 import { Observable } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { configureTestEnvironment, mergeModuleDefs } from './test-helpers';
 
 export interface ReducerConfig<T> {
