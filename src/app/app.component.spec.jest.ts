@@ -1,15 +1,21 @@
 import { async, ComponentFixture } from '@angular/core/testing';
-import { createComponent, setupComponentTest } from '@ngx-patterns/testing';
-import { expectElementFromFixture } from '@ngx-patterns/testing-jest';
+import { createComponent, getModuleDefForStore, mergeModuleDefs, setupComponentTest } from '@ngx-patterns/testing';
+import { expectActionToBeDispatched, expectElementFromFixture } from '@ngx-patterns/testing-jasmine';
+import { reducerConfig } from 'src/test/ngrx';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
     let fixture: ComponentFixture<AppComponent>;
 
-    setupComponentTest({
-        declarations: [
-            AppComponent
-        ],
-    });
+    setupComponentTest(
+        mergeModuleDefs(
+            getModuleDefForStore(reducerConfig),
+            {
+                declarations: [
+                    AppComponent
+                ]
+            }
+        )
+    );
 
     beforeEach(() => {
         fixture = createComponent(AppComponent);
@@ -19,4 +25,12 @@ describe('AppComponent', () => {
     it(`should have a h1`, async(() => {
         expectElementFromFixture(fixture, 'h1').toBeTruthy();
     }));
+    it('dispatches an action', () => {
+        expectActionToBeDispatched(
+            fixture,
+            'submit',
+            () => fixture.componentInstance.submit(),
+            'test'
+        );
+    });
 });
