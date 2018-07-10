@@ -1,6 +1,6 @@
 import { async, ComponentFixture } from '@angular/core/testing';
 import { createComponent, setupComponentTest } from '@ngx-patterns/testing';
-import { expectElementFromFixture } from '@ngx-patterns/testing-jasmine';
+import { expectElementFromFixture } from '@ngx-patterns/testing-jest';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
     let fixture: ComponentFixture<AppComponent>;
