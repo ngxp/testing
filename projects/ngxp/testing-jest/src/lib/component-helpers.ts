@@ -1,5 +1,5 @@
 import { ComponentFixture } from '@angular/core/testing';
-import { elementFromFixture, elementsFromFixture, viewChildFromFixture } from '@ngx-patterns/testing';
+import { elementFromFixture, elementsFromFixture, viewChildFromFixture } from '@ngxp/testing';
 declare var expect: jest.Expect;
 
 export function expectComponent<T>(fixture: ComponentFixture<T>): jest.Matchers<void> {

@@ -1,5 +1,5 @@
 import { async, ComponentFixture } from '@angular/core/testing';
-import { createComponent, getModuleDefForStore, mergeModuleDefs, setupComponentTest } from '@ngx-patterns/testing';
+import { createComponent, getModuleDefForStore, mergeModuleDefs, setupComponentTest } from '@ngxp/testing';
 import { reducerConfig } from 'src/test/ngrx';
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {

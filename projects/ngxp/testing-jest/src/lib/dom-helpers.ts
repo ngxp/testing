@@ -1,4 +1,4 @@
-import { elementByQuery, elementsByQuery } from '@ngx-patterns/testing';
+import { elementByQuery, elementsByQuery } from '@ngxp/testing';
 declare var expect: jest.Expect;
 
 export function expectElement(rootElement: Element, domQuery: string): jest.Matchers<void> {

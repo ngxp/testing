@@ -1,4 +1,4 @@
-import { elementByQuery, elementsByQuery } from '@ngx-patterns/testing';
+import { elementByQuery, elementsByQuery } from '@ngxp/testing';
 
 export function expectElement(rootElement: Element, domQuery: string): jasmine.Matchers<{} | null> {
     return expect(elementByQuery(rootElement, domQuery));

@@ -17,23 +17,23 @@
             "dom"
         ],
         "paths": {
-            "@ngx-patterns/testing": [
-                "dist/ngx-patterns/testing"
+            "@ngxp/testing": [
+                "dist/ngxp/testing"
             ],
-            "@ngx-patterns/testing/*": [
-                "dist/ngx-patterns/testing/*"
+            "@ngxp/testing/*": [
+                "dist/ngxp/testing/*"
             ],
-            "@ngx-patterns/testing-jasmine": [
-                "dist/ngx-patterns/testing-jasmine"
+            "@ngxp/testing-jasmine": [
+                "dist/ngxp/testing-jasmine"
             ],
-            "@ngx-patterns/testing-jasmine/*": [
-                "dist/ngx-patterns/testing-jasmine/*"
+            "@ngxp/testing-jasmine/*": [
+                "dist/ngxp/testing-jasmine/*"
             ],
-            "@ngx-patterns/testing-jest": [
-                "dist/ngx-patterns/testing-jest"
+            "@ngxp/testing-jest": [
+                "dist/ngxp/testing-jest"
             ],
-            "@ngx-patterns/testing-jest/*": [
-                "dist/ngx-patterns/testing-jest/*"
+            "@ngxp/testing-jest/*": [
+                "dist/ngxp/testing-jest/*"
             ]
         }
     }

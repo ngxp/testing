@@ -6,14 +6,14 @@
         "start": "ng serve",
         "build": "ng build testing-example",
         "build:libs": "run-s build:lib build:lib-jasmine build:lib-jest",
-        "build:lib": "ng build @ngx-patterns/testing",
-        "build:lib-jasmine": "ng build @ngx-patterns/testing-jasmine",
-        "build:lib-jest": "ng build @ngx-patterns/testing-jest",
+        "build:lib": "ng build @ngxp/testing",
+        "build:lib-jasmine": "ng build @ngxp/testing-jasmine",
+        "build:lib-jest": "ng build @ngxp/testing-jest",
         "test:jasmine": "ng test testing-example",
         "test:jest": "jest",
-        "test:lib": "ng test @ngx-patterns/testing",
-        "test:lib-jasmine": "ng test @ngx-patterns/testing-jasmine",
-        "test:lib-jest": "ng test @ngx-patterns/testing-jest",
+        "test:lib": "ng test @ngxp/testing",
+        "test:lib-jasmine": "ng test @ngxp/testing-jasmine",
+        "test:lib-jest": "ng test @ngxp/testing-jest",
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
@@ -81,9 +81,9 @@
             "app/(.*)": "<rootDir>/src/app/$1",
             "assets/(.*)": "<rootDir>/src/assets/$1",
             "environments/(.*)": "<rootDir>/src/environments/$1",
-            "^@ngx-patterns/testing$": "<rootDir>/dist/ngx-patterns/testing",
-            "^@ngx-patterns/testing-jasmine$": "<rootDir>/dist/ngx-patterns/testing-jasmine",
-            "^@ngx-patterns/testing-jest$": "<rootDir>/dist/ngx-patterns/testing-jest"
+            "^@ngxp/testing$": "<rootDir>/dist/ngxp/testing",
+            "^@ngxp/testing-jasmine$": "<rootDir>/dist/ngxp/testing-jasmine",
+            "^@ngxp/testing-jest$": "<rootDir>/dist/ngxp/testing-jest"
         },
         "modulePathIgnorePatterns": [
             "<rootDir>/projects/"
